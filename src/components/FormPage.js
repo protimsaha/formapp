@@ -140,7 +140,7 @@ const FormPage = ({setAgree,agree,setName,name,setSectors,sectors}) => {
             <div className='mt-4 flex items-center gap-2'>
                 <input className='hidden' role='button' onChange={(e)=>handleAgree(e)} type='checkbox' id='agree'/>
                 <div className={`w-5 h-5 rounded-[3px] border border-blue-600 flex justify-center items-center ${agree?'bg-blue-500':'bg-transparent'}`}> 
-                <span className={`${agree ?'text-white':'text-black' } `}>✓</span>
+                <span className={`${agree ?'text-white':'text-black hidden' } `}>✓</span>
                 </div>
                 <label role='button' className='text-base text-slate-800 font-semibold' htmlFor='agree'>Agree to terms</label>
                     
